@@ -11,6 +11,7 @@ namespace LogicalPrograms
             Console.WriteLine(".............................................");
             Console.WriteLine("1 For: Fibonacci Series ");
             Console.WriteLine("2 For: Perfect Number ");
+            Console.WriteLine("3 For: Prime Number ");
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
             {
@@ -23,6 +24,11 @@ namespace LogicalPrograms
                     //Perfect Number
                     PerfectNumbercs PerfectNum = new PerfectNumbercs();
                     PerfectNum.CheckPerfectNumber();
+                    break;
+                case 3:
+                    //Prime Number
+                    PrimeNumber Primenumber = new PrimeNumber();
+                    Primenumber.CheckPrimeNumber();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select in b/w  1 to 4");
